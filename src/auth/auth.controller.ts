@@ -31,7 +31,9 @@ export class AuthController {
     const user = req.user as UserDocument;
     const data = await this.authProvider.signin({
       sub: user.id,
+      firstname:user.firstname,
       email: user.email,
+      language:user.language
     });
     return data;
   }

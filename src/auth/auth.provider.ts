@@ -38,7 +38,7 @@ export class AuthProvider {
     };
   }
 
-  async signin(data: { sub: string; email: string }): Promise<IResponse> {
+  async signin(data: { sub: string; email: string ,firstname:string,language:string}): Promise<IResponse> {
     const token = await this.authService.getToken(data);
     return {
       success: true,

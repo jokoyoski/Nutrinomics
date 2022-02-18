@@ -6,6 +6,7 @@ const requiredStr = Joi.string().required();
 export const SignUpSchema = Joi.object({
   firstname: requiredStr,
   lastname: requiredStr,
+  language: requiredStr,
   email: requiredStr.email(),
   password: requiredStr.min(MIN_PWD_LEN),
 });

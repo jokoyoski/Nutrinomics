@@ -29,6 +29,7 @@
     "@nestjs/passport": "^8.2.1",
     "@nestjs/platform-express": "^8.0.0",
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "joi": "^17.6.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
